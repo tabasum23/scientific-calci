@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="calci.css">
+    <title>Scientific Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display">
+      <div class="buttons">
+        <button class="num" onclick="appendDisp('7')">7</button>
+        <button class="num" onclick="appendDisp('8')">8</button>
+        <button class="num" onclick="appendDisp('9')">9</button>
+        <button class="func" onclick="calcSin()">sin</button>
+        <button class="num" onclick="appendDisp('4')">4</button>
+        <button class="num" onclick="appendDisp('5')">5</button>
+        <button class="num" onclick="appendDisp('6')">6</button>
+        <button class="func" onclick="calcCos()">cos</button>
+        <button class="num" onclick="appendDisp('1')">1</button>
+        <button class="num" onclick="appendDisp('2')">2</button>
+        <button class="num" onclick="appendDisp('3')">3</button>
+        <button class="func" onclick="calcTan()">tan</button>
+        <button class="num" onclick="appendDisp('0')">0</button>
+        <button class="num" onclick="appendDisp('.')">.</button>
+        <button class="func" onclick="calcExp()">Exp</button>
+        <button class="func" onclick="calcSqrt()">&#8730</button>
+        <button class="func" onclick="calcLog()">log</button>
+        <button class="func" onclick="calcLn()">ln</button>
+        <button class="func" onclick="calcSquare()">x<sup>2</sup></button>
+        <button class="func" onclick="calcCube()">x<sup>3</sup></button>
+        <button class="func" onclick="calcMod()">mod</button>
+        <button class="func" onclick="calcFactorial()">!</button>
+        
+        <button class="operator" onclick="appendDisp('+')">+</button>
+        <button class="operator" onclick="appendDisp('-')">-</button>
+        <button class="operator" onclick="appendDisp('*')">*</button>
+        <button class="operator" onclick="appendDisp('/')">&#247;</button>
+        <button class="operator" onclick="appendDisp('%')">%</button>
+        <button class="operator" onclick="appendDisp('**')">^</button>
+
+        <button class="clear" onclick="backspace()">&#x2328;</button>
+        <button class="clear" onclick="clearDisp()">C</button>
+
+        <button class="equals" onclick="calc()">=</button>
+
+
+
+      </div>
+    </div>
+    <script src="calci.js"></script>
+  </body>
+</html>
+
+
